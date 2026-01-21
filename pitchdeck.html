@@ -1,1 +1,410 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Econo-X Agro-Hub Pitch Deck</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --brand-navy: #001f3f;
+            --brand-red: #d90429;
+            --text-dark: #1e293b;
+            --text-light: #f8fafc;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #e2e8f0;
+        }
+
+        .deck-scroll-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding: 40px;
+            align-items: center;
+        }
+
+        .slide-frame {
+            width: 1000px; /* Standard presentation width */
+            height: 562.5px; /* 16:9 Aspect Ratio */
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navy-slide {
+            background-color: var(--brand-navy);
+            color: white;
+        }
+
+        .slide-header-bar {
+            padding: 1.5em 3em 0.5em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .navy-slide .slide-header-bar {
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .slide-header-bar h2 {
+            margin: 0;
+            font-size: 1.8em;
+            color: var(--brand-navy);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .slide-content-wrapper {
+            padding: 2em 3em;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .slide-footer-bar {
+            height: 0.8em;
+            background: linear-gradient(90deg, var(--brand-navy) 0%, var(--brand-navy) 85%, var(--brand-red) 85%);
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .navy-slide .slide-footer-bar {
+            background: linear-gradient(90deg, #0f3460 0%, #0f3460 85%, var(--brand-red) 85%);
+        }
+
+        .slide-cols {
+            display: flex;
+            gap: 3em;
+            height: 100%;
+            align-items: center;
+        }
+
+        .slide-cols > div {
+            flex: 1;
+        }
+
+        .slide-img-box {
+            height: 100%;
+            border-radius: 0.5em;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .slide-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slide-tile {
+            padding: 1em;
+            border-radius: 0.5em;
+            background: #f8fafc;
+            border-left: 4px solid var(--brand-navy);
+            margin-bottom: 1em;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .slide-tile.red-accent {
+            border-left-color: var(--brand-red);
+        }
+
+        h1, h2, h3, h4 { margin-top: 0; }
+        
+        .stat-box {
+            background: #f8fafc;
+            padding: 1.5em;
+            border-radius: 0.5em;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .stat-value {
+            display: block;
+            font-size: 2.2em;
+            font-weight: 700;
+            color: var(--brand-red);
+            line-height: 1.1;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0.5em;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="deck-scroll-container">
+        
+        <!-- Slide 1: Title -->
+        <div class="slide-frame navy-slide">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.2; background-image: url('https://images.unsplash.com/photo-1625246333195-58197bd47a30?q=80&w=1000&auto=format&fit=crop'); background-size: cover; background-position: center;"></div>
+            <div class="slide-content-wrapper" style="justify-content: center; align-items: center; text-align: center; z-index: 2;">
+                <!-- Placeholder for Logo if available, using text for now -->
+                <h2 style="font-size: 1.5em; letter-spacing: 4px; opacity: 0.8; margin-bottom: 2em;">ECONO-X AGRO-HUB</h2>
+                
+                <h1 style="font-size: 4em; line-height: 1.1; margin-bottom: 0.2em;">Premium Agricultural<br>Enterprise</h1>
+                
+                <div style="width: 8em; height: 0.4em; background: var(--brand-red); margin: 1.5em auto 2em;"></div>
+                
+                <p style="font-size: 1.5em; font-weight: 300; opacity: 0.9;">R11.5M Capital Raise | Limpopo, South Africa</p>
+                
+                <div style="margin-top: 3em; display: flex; gap: 2em; opacity: 0.8;">
+                    <span><i class="fa-solid fa-calendar"></i> 36-Month Term</span>
+                    <span><i class="fa-solid fa-chart-line"></i> 78% IRR</span>
+                </div>
+            </div>
+            <div class="slide-footer-bar"></div>
+        </div>
+
+        <!-- Slide 2: The Opportunity -->
+        <div class="slide-frame">
+            <div class="slide-header-bar">
+                <h2>The Market Opportunity</h2>
+                <span style="font-weight: 700; color: var(--brand-navy);">ECONO-X</span>
+            </div>
+            <div class="slide-content-wrapper">
+                <div class="slide-cols">
+                    <div class="slide-img-box">
+                        <img decoding="async" src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1000&auto=format&fit=crop" alt="Market Produce">
+                    </div>
+                    <div>
+                        <h3 style="color: var(--brand-navy); margin-bottom: 1em;">Bridging the Quality Gap</h3>
+                        
+                        <div style="display: flex; gap: 1em; margin-bottom: 1.5em;">
+                            <div class="stat-box" style="flex:1;">
+                                <span class="stat-value">R78bn</span>
+                                <span class="stat-label">SA Vegetable Market</span>
+                            </div>
+                            <div class="stat-box" style="flex:1;">
+                                <span class="stat-value">67%</span>
+                                <span class="stat-label">Botswana Import Reliance</span>
+                            </div>
+                        </div>
+
+                        <div class="slide-tile">
+                            <strong><i class="fa-solid fa-arrow-trend-up" style="color: var(--brand-red); margin-right: 10px;"></i> Growing Demand</strong>
+                            <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #64748b;">2.1% Annual population growth drives consumption.</p>
+                        </div>
+                        <div class="slide-tile red-accent">
+                            <strong><i class="fa-solid fa-triangle-exclamation" style="color: var(--brand-red); margin-right: 10px;"></i> Current Pain Point</strong>
+                            <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #64748b;">Inconsistent supply from smallholders creates a premium gap.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer-bar"></div>
+        </div>
+
+        <!-- Slide 3: The Investment -->
+        <div class="slide-frame">
+            <div class="slide-header-bar">
+                <h2>Capital Deployment</h2>
+                <span style="font-weight: 700; color: var(--brand-navy);">ECONO-X</span>
+            </div>
+            <div class="slide-content-wrapper">
+                <div style="margin-bottom: 2em; text-align: center;">
+                    <span style="font-size: 1.2em; color: #64748b;">Total Facility Request</span>
+                    <h1 style="font-size: 3.5em; color: var(--brand-navy); margin: 0;">R11,500,000</h1>
+                </div>
+
+                <div class="slide-cols" style="align-items: flex-start;">
+                    <div style="background: #f0f9ff; padding: 2em; border-radius: 1em; height: 100%;">
+                        <h3 style="color: var(--brand-navy); border-bottom: 2px solid var(--brand-red); padding-bottom: 0.5em; display: inline-block;">Fixed Assets (78%)</h3>
+                        <ul style="list-style: none; padding: 0; margin-top: 1.5em;">
+                            <li style="margin-bottom: 1em; display: flex; justify-content: space-between;">
+                                <span><i class="fa-solid fa-tractor" style="color: var(--brand-navy); width: 25px;"></i> Mechanization</span>
+                                <strong>R3.2M</strong>
+                            </li>
+                            <li style="margin-bottom: 1em; display: flex; justify-content: space-between;">
+                                <span><i class="fa-solid fa-flask" style="color: var(--brand-navy); width: 25px;"></i> Laboratory</span>
+                                <strong>R2.0M</strong>
+                            </li>
+                            <li style="margin-bottom: 1em; display: flex; justify-content: space-between;">
+                                <span><i class="fa-solid fa-warehouse" style="color: var(--brand-navy); width: 25px;"></i> Greenhouses</span>
+                                <strong>R1.5M</strong>
+                            </li>
+                            <li style="margin-bottom: 1em; display: flex; justify-content: space-between;">
+                                <span><i class="fa-solid fa-water" style="color: var(--brand-navy); width: 25px;"></i> Irrigation</span>
+                                <strong>R1.2M</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="background: #fff1f2; padding: 2em; border-radius: 1em; height: 100%;">
+                        <h3 style="color: var(--brand-red); border-bottom: 2px solid var(--brand-navy); padding-bottom: 0.5em; display: inline-block;">Asset Base Security</h3>
+                        <p style="margin-top: 1.5em; font-size: 1.1em;">Backed by <strong>140 Hectares</strong> of prime agricultural land.</p>
+                        
+                        <div style="margin-top: 2em; padding: 1em; background: white; border-radius: 0.5em; border: 1px solid #e2e8f0;">
+                            <div style="font-size: 0.9em; color: #64748b;">Current Land Valuation</div>
+                            <div style="font-size: 2em; font-weight: 700; color: var(--brand-navy);">R26,000,000</div>
+                        </div>
+                        <p style="margin-top: 1em; font-size: 0.9em; color: #64748b;">
+                            <i class="fa-solid fa-check" style="color: var(--brand-red);"></i> 1.2M m³ Water Rights<br>
+                            <i class="fa-solid fa-check" style="color: var(--brand-red);"></i> N1 Highway Access
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer-bar"></div>
+        </div>
+
+        <!-- Slide 4: Production Strategy (Navy) -->
+        <div class="slide-frame navy-slide">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at center, #003366 0%, #001f3f 100%);"></div>
+            <div class="slide-content-wrapper" style="justify-content: center; align-items: center; text-align: center; z-index: 2;">
+                <div style="background: var(--brand-red); color: white; padding: 0.5em 1.5em; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 2em;">Production Strategy</div>
+                
+                <h1 style="font-size: 3.5em; margin-bottom: 0.5em;">Diversified Operations <i class="fa-solid fa-leaf" style="color: #4ade80;"></i></h1>
+                <p style="font-size: 1.5em; color: #cbd5e1 !important; margin-bottom: 3em;">Year-Round Output of 4,000+ Tonnes</p>
+                
+                <div style="display: flex; gap: 2em;">
+                    <div style="border: 2px solid rgba(255,255,255,0.2); padding: 1.5em; border-radius: 0.5em; width: 15em;">
+                        <h3 style="color: white; font-size: 1.2em; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 10px; margin-bottom: 10px;">SUMMER</h3>
+                        <p style="font-size: 1em; color: #94a3b8 !important; margin: 0;">Maize, Tomatoes, Cowpeas</p>
+                    </div>
+                    <div style="border: 2px solid rgba(255,255,255,0.2); padding: 1.5em; border-radius: 0.5em; width: 15em;">
+                        <h3 style="color: white; font-size: 1.2em; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 10px; margin-bottom: 10px;">WINTER</h3>
+                        <p style="font-size: 1em; color: #94a3b8 !important; margin: 0;">Potatoes, Cabbage, Spinach</p>
+                    </div>
+                    <div style="border: 2px solid rgba(255,255,255,0.2); padding: 1.5em; border-radius: 0.5em; width: 15em;">
+                        <h3 style="color: white; font-size: 1.2em; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 10px; margin-bottom: 10px;">SPRING</h3>
+                        <p style="font-size: 1em; color: #94a3b8 !important; margin: 0;">Green Beans, Onions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer-bar"></div>
+        </div>
+
+        <!-- Slide 5: Financials -->
+        <div class="slide-frame">
+            <div class="slide-header-bar">
+                <h2>Financial Trajectory</h2>
+                <span style="font-weight: 700; color: var(--brand-navy);">ECONO-X</span>
+            </div>
+            <div class="slide-content-wrapper">
+                <div style="text-align: center; margin-bottom: 2em;">
+                    <p style="font-size: 1.2em; color: #64748b;">Projected 3-Year Total Revenue: <strong>R80,578,000</strong></p>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; position: relative; margin-top: 2em;">
+                    <!-- Timeline Line -->
+                    <div style="position: absolute; top: 50%; width: 100%; height: 0.2em; background: #e2e8f0; z-index: 0;"></div>
+                    
+                    <!-- Year 1 -->
+                    <div style="position: relative; z-index: 1; background: white; padding: 1.5em; border: 2px solid var(--brand-navy); border-radius: 0.5em; width: 28%; text-align: center;">
+                        <h3 style="margin-bottom: 0.5em; color: var(--brand-navy);">YEAR 1</h3>
+                        <div style="font-size: 1.8em; font-weight: 700; color: var(--brand-red);">R24.2M</div>
+                        <p style="font-size: 0.9em; margin-top: 0.5em; color: #64748b;">Revenue</p>
+                        <div style="background: #f0f9ff; padding: 5px; border-radius: 4px; font-size: 0.8em; margin-top: 10px;"><strong>20.2%</strong> Net Margin</div>
+                    </div>
+
+                    <!-- Year 2 -->
+                    <div style="position: relative; z-index: 1; background: white; padding: 1.5em; border: 2px solid var(--brand-navy); border-radius: 0.5em; width: 28%; text-align: center;">
+                        <h3 style="margin-bottom: 0.5em; color: var(--brand-navy);">YEAR 2</h3>
+                        <div style="font-size: 1.8em; font-weight: 700; color: var(--brand-red);">R26.7M</div>
+                        <p style="font-size: 0.9em; margin-top: 0.5em; color: #64748b;">Revenue</p>
+                        <div style="background: #f0f9ff; padding: 5px; border-radius: 4px; font-size: 0.8em; margin-top: 10px;"><strong>23.6%</strong> Net Margin</div>
+                    </div>
+
+                    <!-- Year 3 -->
+                    <div style="position: relative; z-index: 1; background: white; padding: 1.5em; border: 2px solid var(--brand-navy); border-radius: 0.5em; width: 28%; text-align: center;">
+                        <h3 style="margin-bottom: 0.5em; color: var(--brand-navy);">YEAR 3</h3>
+                        <div style="font-size: 1.8em; font-weight: 700; color: var(--brand-red);">R29.5M</div>
+                        <p style="font-size: 0.9em; margin-top: 0.5em; color: #64748b;">Revenue</p>
+                        <div style="background: #f0f9ff; padding: 5px; border-radius: 4px; font-size: 0.8em; margin-top: 10px;"><strong>26.6%</strong> Net Margin</div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer-bar"></div>
+        </div>
+
+        <!-- Slide 6: Competitive Advantage -->
+        <div class="slide-frame">
+            <div class="slide-header-bar">
+                <h2>Why We Will Succeed</h2>
+                <span style="font-weight: 700; color: var(--brand-navy);">ECONO-X</span>
+            </div>
+            <div class="slide-content-wrapper">
+                <div class="slide-cols">
+                    <div>
+                        <div class="slide-tile red-accent">
+                            <strong><i class="fa-solid fa-handshake" style="color: var(--brand-red); margin-right: 10px;"></i> Confirmed Offtake (75%)</strong>
+                            <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #64748b;">Johannesburg Market, Botswana Retail & Processing contracts in place.</p>
+                        </div>
+                        <div class="slide-tile">
+                            <strong><i class="fa-solid fa-certificate" style="color: var(--brand-navy); margin-right: 10px;"></i> ISO 22000 Certified</strong>
+                            <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #64748b;">Commands 10-15% price premium and ensures export access.</p>
+                        </div>
+                        <div class="slide-tile">
+                            <strong><i class="fa-solid fa-flask" style="color: var(--brand-navy); margin-right: 10px;"></i> On-Site Laboratory</strong>
+                            <p style="margin: 5px 0 0 0; font-size: 0.9em; color: #64748b;">Ensures quality control and generates secondary revenue (R495k/yr).</p>
+                        </div>
+                    </div>
+                    <div style="background: #f8fafc; padding: 2em; border-radius: 1em; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+                        <h3 style="color: var(--brand-navy);">Management Expertise</h3>
+                        <div style="font-size: 4em; font-weight: 700; color: var(--brand-red); line-height: 1;">37</div>
+                        <p style="font-size: 1.2em; margin-bottom: 2em;">Years Combined Experience</p>
+                        <p style="font-size: 0.9em; color: #64748b;">
+                            Managing Director (15 Yrs)<br>
+                            Ops Director (12 Yrs)<br>
+                            Commercial Director (10 Yrs)
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-footer-bar"></div>
+        </div>
+
+        <!-- Slide 7: The Ask -->
+        <div class="slide-frame navy-slide">
+            <div class="slide-content-wrapper" style="justify-content: center; align-items: center; text-align: center;">
+                <h1 style="font-size: 4em; margin-bottom: 0.2em;">The Proposal</h1>
+                <div style="width: 6em; height: 0.3em; background: var(--brand-red); margin: 0 auto 3em;"></div>
+                
+                <div style="display: flex; gap: 4em; margin-bottom: 3em;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 1em; opacity: 0.7;">Loan Amount</div>
+                        <div style="font-size: 2.5em; font-weight: 700;">R11.5M</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 1em; opacity: 0.7;">Term</div>
+                        <div style="font-size: 2.5em; font-weight: 700;">36 Months</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 1em; opacity: 0.7;">Security Coverage</div>
+                        <div style="font-size: 2.5em; font-weight: 700; color: var(--brand-red);">304%</div>
+                    </div>
+                </div>
+
+                <p style="font-size: 1.2em; color: #cbd5e1 !important; max-width: 600px;">
+                    A bankable, scalable, and socially responsible venture ready for immediate implementation.
+                </p>
+
+                <a href="#" style="background: var(--brand-red); color: white; text-decoration: none; padding: 1em 3em; border-radius: 50px; font-size: 1.2em; font-weight: 700; margin-top: 2em; display: inline-block; box-shadow: 0 4px 15px rgba(217, 4, 41, 0.4);">
+                    Partner With Us
+                </a>
+            </div>
+            <div class="slide-footer-bar"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
